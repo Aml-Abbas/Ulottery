@@ -1,0 +1,109 @@
+.logo {
+    height: 50px;
+    width: 60px;
+    
+}
+ul li{
+    padding-left: 8px;
+   
+}
+ul li a {color: #27ae60;
+}
+ul li a:hover {color: white;
+    background-color:#27ae60; 
+    text-decoration: none;
+}
+#top {
+    height: 70vh;
+    width: 100vw;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    -webkit-animation: color-change-2x 6s linear infinite alternate both;
+    animation: color-change-2x 6s linear infinite alternate both;
+    overflow: hidden;
+}
+
+#top .text-box {
+    width: auto;
+    position: inherit;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#top .text_box h1 {
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+}
+
+#top .text-box p {
+    font-style: italic;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background: url(image/bg.jpg);
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    background-position: top;
+    background-size: cover;
+    -webkit-animation: kenburns-bottom-left 10s ease-out infinite alternate-reverse forwards;
+    animation: kenburns-bottom-left 10s ease-out infinite alternate-reverse forwards;
+    overflow: hidden;
+}
+
+
+@keyframes color-change-2x {
+    0% {
+        background: white;
+    }
+    100% {
+        background: hotpink;
+    }
+}
+
+
+ @keyframes kenburns-bottom-left {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: 16% 84%;
+        transform-origin: 16% 84%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translate(-20px, 15px);
+        transform: scale(1.25) translate(-20px, 15px);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+    }
+}
+@media only screen and (max-width:800px) {
+form {margin-left: 19%;
+padding-left: 5px;}
+}
+@media only screen and (max-width:660px) {
+    form {margin-left: 10%;
+        padding-left: 5px;}
+       
+        }
+        @media only screen and (max-width:510px) {
+            form {margin-left: 15%;
+                padding-left: 5px;}
+                }
+                @media only screen and (max-width:315px) {
+                    form {margin-left: 1%;
+                        padding-left: 5px;}
+                        }
+
+                @media only screen and (min-width:510px) {
+                ul li {display: inline;}
+                    form {
+                        width: 440px;
+                    }  
+                        }
